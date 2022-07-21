@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.grid-container1 {
+
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: purple;
+    padding: 10px;
+}
+.grid-item1 {
+    background-color: yellow  ;
+    padding: 20px;
+    font-size: 30px ;
+    text-align: center;
+    border:1px solid red;
+}
+
+.grid-container2 {
+
+display: grid;
+/* columnların büyüklüklerini ayarlama */
+grid-template-columns: auto 100px 450px auto;
+background-color: purple;
+padding: 10px;
+}
+.grid-item2 {
+background-color: yellow  ;
+padding: 20px;
+font-size: 30px ;
+text-align: center;
+border:1px solid red;
+}
+.grid-container3 {
+
+display: grid;
+
+/* column ve rowların arasına boşluk koyma */
+
+/* grid-row-gap: 50px;
+grid-column-gap: 50px; 
+bunlarla ya da tek kod ile aşağıdaki gibi yazılır*/
+grid-gap: 50px;
+grid-template-columns: auto auto auto;
+background-color: purple;
+padding: 10px;
+}
+.grid-item3 {
+background-color: yellow  ;
+padding: 20px;
+font-size: 30px ;
+text-align: center;
+border:1px solid red;
+}
+.grid-container4 {
+    grid-gap: 50px;
+display: grid;
+grid-template-columns: auto auto auto;
+background-color: purple;
+padding: 10px;
+}
+.grid-item4 {
+background-color: yellow  ;
+
+padding: 20px;
+font-size: 30px ;
+text-align: center;
+border:1px solid red;
+}
+#grid-i4 {
+    /* 1. satırdan 3.satıra kadar kapsar  */
+    grid-row-start: 1;
+    grid-row-end: 3;
+
+}
+#grid-i5 { 
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+}
+.grid-container5 {
+    grid-gap: 10px;
+display: grid;
+grid-template-columns: auto auto auto;
+grid-template-rows: 100px 250px;
+background-color: purple;
+padding: 10px;
+}
+.grid-item5 {
+background-color: yellow  ;
+
+padding: 20px;
+font-size: 30px ;
+text-align: center;
+border:1px solid red;
+}
+.grid-container6 {
+    justify-content: space-evenly;
+    height: 500px;
+grid-gap: 10px;
+display: grid;
+grid-template-columns: auto auto auto;
+
+background-color: purple;
+padding: 10px;
+}
+.grid-item6 {
+background-color: yellow  ;
+
+padding: 20px;
+font-size: 30px ;
+text-align: center;
+border:1px solid red;
+}
+.grid-container7 {
+    justify-content: space-between;
+    height: 500px;
+grid-gap: 10px;
+display: grid;
+grid-template-columns: auto auto auto;
+
+background-color: purple;
+padding: 10px;
+}
+.grid-item7 {
+background-color: yellow  ;
+
+padding: 20px;
+font-size: 30px ;
+text-align: center;
+border:1px solid red;
+}
+.grid-container8 {
+    justify-content: center;
+    height: 500px;
+grid-gap: 10px;
+display: grid;
+grid-template-columns: auto auto auto;
+
+background-color: purple;
+padding: 10px;
+}
+.grid-item8 {
+background-color: yellow  ;
+
+padding: 20px;
+font-size: 30px ;
+text-align: center;
+border:1px solid red;
+}
+.grid-container9 {
+    justify-content: start;
+    height: 500px;
+grid-gap: 10px;
+display: grid;
+grid-template-columns: auto auto auto;
+
+background-color: purple;
+padding: 10px;
+}
+.grid-item9 {
+background-color: yellow  ;
+
+padding: 20px;
+font-size: 30px ;
+text-align: center;
+border:1px solid red;
+}
+.grid-container10 {
+    justify-content: end;
+    height: 500px;
+grid-gap: 10px;
+display: grid;
+grid-template-columns: auto auto auto;
+
+background-color: purple;
+padding: 10px;
+}
+.grid-item10 {
+background-color: yellow  ;
+
+padding: 20px;
+font-size: 30px ;
+text-align: center;
+border:1px solid red;
+}
+.grid-container11 {
+justify-content: end;
+align-content: center;
+    height: 500px;
+grid-gap: 10px;
+display: grid;
+grid-template-columns: auto auto auto;
+
+background-color: purple;
+padding: 10px;
+}
+.grid-item11 {
+background-color: yellow  ;
+
+padding: 20px;
+font-size: 30px ;
+text-align: center;
+border:1px solid red;
+}
+.grid-container12 {
+justify-content: end;
+align-content: space-evenly;
+    height: 500px;
+grid-gap: 10px;
+display: grid;
+grid-template-columns: auto auto auto;
+
+background-color: purple;
+padding: 10px;
+}
+.grid-item12 {
+background-color: yellow  ;
+
+padding: 20px;
+font-size: 30px ;
+text-align: center;
+border:1px solid red;
+}
+.grid-container13 {
+justify-content: end;
+align-content: space-between;
+    height: 500px;
+grid-gap: 10px;
+display: grid;
+grid-template-columns: auto auto auto;
+
+background-color: purple;
+padding: 10px;
+}
+.grid-item13 {
+background-color: yellow  ;
+
+padding: 20px;
+font-size: 30px ;
+text-align: center;
+border:1px solid red;
+}
+.grid-container14 {
+justify-content: end;
+align-content:start;
+    height: 500px;
+grid-gap: 10px;
+display: grid;
+grid-template-columns: auto auto auto;
+
+background-color: purple;
+padding: 10px;
+}
+.grid-item14 {
+background-color: yellow  ;
+
+padding: 20px;
+font-size: 30px ;
+text-align: center;
+border:1px solid red;
+}
+.grid-container15 {
+justify-content: end;
+align-content: end;
+    height: 500px;
+grid-gap: 10px;
+display: grid;
+grid-template-columns: auto auto auto;
+
+background-color: purple;
+padding: 10px;
+}
+.grid-item15 {
+background-color: yellow  ;
+
+padding: 20px;
+font-size: 30px ;
+text-align: center;
+border:1px solid red;
+}
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Grid Items</h1>
+<div class="grid-container1">
+    <div class="grid-item1">1</div>
+    <div class="grid-item1">2</div>
+    <div class="grid-item1">3</div>
+    <div class="grid-item1">4</div>
+    <div class="grid-item1">5</div>
+    <div class="grid-item1">6</div>
+    <div class="grid-item1">7</div>
+    <div class="grid-item1">8</div>
+    <div class="grid-item1">9</div>
+</div>
+<br>
+<br>
+    
+<div class="grid-container2">
+    <div class="grid-item2">1</div>
+    <div class="grid-item2">2</div>
+    <div class="grid-item2">3</div>
+    <div class="grid-item2">4</div>
+    <div class="grid-item2">5</div>
+    <div class="grid-item2">6</div>
+    <div class="grid-item2">7</div>
+    <div class="grid-item2">8</div>
+    <div class="grid-item2">9</div>
+</div>
+<br>
+<br>
+<h1>Grid Gap</h1>
+<div class="grid-container3">
+    <div class="grid-item3">1</div>
+    <div class="grid-item3">2</div>
+    <div class="grid-item3">3</div>
+    <div class="grid-item3">4</div>
+    <div class="grid-item3">5</div>
+    <div class="grid-item3">6</div>
+    <div class="grid-item3">7</div>
+    <div class="grid-item3">8</div>
+    <div class="grid-item3">9</div>
+</div>
+<br>
+<br>
+<h1>Grid Lines</h1>
+<div class="grid-container4">
+    <div class="grid-item4">1</div>
+    <div class="grid-item4" id="grid-i4">2</div>
+    <div class="grid-item4" id="grid-i5">3</div>
+    <div class="grid-item4">4</div>
+    <div class="grid-item4">5</div>
+    <div class="grid-item4">6</div>
+    <div class="grid-item4">7</div>
+    <div class="grid-item4">8</div>
+    <div class="grid-item4">9</div>
+</div>
+<br>
+<br>
+<h1>Grid Template rows and columns</h1>
+<div class="grid-container5">
+    <div class="grid-item5">1</div>
+    <div class="grid-item5">2</div>
+    <div class="grid-item5">3</div>
+    <div class="grid-item5">4</div>
+    <div class="grid-item5">5</div>
+    <div class="grid-item5">6</div>
+    <div class="grid-item5">7</div>
+    <div class="grid-item5">8</div>
+    <div class="grid-item5">9</div>
+</div>
+<br>
+<br>
+<h1>Grid Justify-Content - Yatay Kontrol</h1>
+<h2>space-evenly</h2>
+<div class="grid-container6">
+    <div class="grid-item6">1</div>
+    <div class="grid-item6">2</div>
+    <div class="grid-item6">3</div>
+    <div class="grid-item6">4</div>
+    <div class="grid-item6">5</div>
+    <div class="grid-item6">6</div>
+    <div class="grid-item6">7</div>
+    <div class="grid-item6">8</div>
+    <div class="grid-item6">9</div>
+</div>
+<br>
+<br>
+<h2>space-between</h2>
+<div class="grid-container7">
+    <div class="grid-item7">1</div>
+    <div class="grid-item7">2</div>
+    <div class="grid-item7">3</div>
+    <div class="grid-item7">4</div>
+    <div class="grid-item7">5</div>
+    <div class="grid-item7">6</div>
+    <div class="grid-item7">7</div>
+    <div class="grid-item7">8</div>
+    <div class="grid-item7">9</div>
+    
+</div>
+<h2>Center</h2>
+<br>
+<br>
+<div class="grid-container8">
+    <div class="grid-item8">1</div>
+    <div class="grid-item8">2</div>
+    <div class="grid-item8">3</div>
+    <div class="grid-item8">4</div>
+    <div class="grid-item8">5</div>
+    <div class="grid-item8">6</div>
+    <div class="grid-item8">7</div>
+    <div class="grid-item8">8</div>
+    <div class="grid-item8">9</div>
+    
+</div>
+<h2>Start</h2>
+<br>
+<br>
+<div class="grid-container9">
+    <div class="grid-item9">1</div>
+    <div class="grid-item9">2</div>
+    <div class="grid-item9">3</div>
+    <div class="grid-item9">4</div>
+    <div class="grid-item9">5</div>
+    <div class="grid-item9">6</div>
+    <div class="grid-item9">7</div>
+    <div class="grid-item9">8</div>
+    <div class="grid-item9">9</div>
+    
+</div>
+<h2>End</h2>
+<br>
+<br>
+<div class="grid-container10">
+    <div class="grid-item10">1</div>
+    <div class="grid-item10">2</div>
+    <div class="grid-item10">3</div>
+    <div class="grid-item10">4</div>
+    <div class="grid-item10">5</div>
+    <div class="grid-item10">6</div>
+    <div class="grid-item10">7</div>
+    <div class="grid-item10">8</div>
+    <div class="grid-item10">9</div>
+    
+</div>
+<h1>Align Content  - Dikey Kontrol</h1>
+<h2>Center</h2>
+<br>
+<br>
+<div class="grid-container11">
+    <div class="grid-item11">1</div>
+    <div class="grid-item11">2</div>
+    <div class="grid-item11">3</div>
+    <div class="grid-item11">4</div>
+    <div class="grid-item11">5</div>
+    <div class="grid-item11">6</div>
+    <div class="grid-item11">7</div>
+    <div class="grid-item11">8</div>
+    <div class="grid-item11">9</div>
+    
+</div>
+<h2>space-evenly</h2>
+<br>
+<br>
+<div class="grid-container12">
+    <div class="grid-item12">1</div>
+    <div class="grid-item12">2</div>
+    <div class="grid-item12">3</div>
+    <div class="grid-item12">4</div>
+    <div class="grid-item12">5</div>
+    <div class="grid-item12">6</div>
+    <div class="grid-item12">7</div>
+    <div class="grid-item12">8</div>
+    <div class="grid-item12">9</div>
+    
+</div>
+<h2>space-between</h2>
+<br>
+<br>
+<div class="grid-container13">
+    <div class="grid-item13">1</div>
+    <div class="grid-item13">2</div>
+    <div class="grid-item13">3</div>
+    <div class="grid-item13">4</div>
+    <div class="grid-item13">5</div>
+    <div class="grid-item13">6</div>
+    <div class="grid-item13">7</div>
+    <div class="grid-item13">8</div>
+    <div class="grid-item13">9</div>
+    
+</div>
+<h2>start</h2>
+<br>
+<br>
+<div class="grid-container14">
+    <div class="grid-item14">1</div>
+    <div class="grid-item14">2</div>
+    <div class="grid-item14">3</div>
+    <div class="grid-item14">4</div>
+    <div class="grid-item14">5</div>
+    <div class="grid-item14">6</div>
+    <div class="grid-item14">7</div>
+    <div class="grid-item14">8</div>
+    <div class="grid-item14">9</div>
+    
+</div>
+<h2>end</h2>
+<br>
+<br>
+<div class="grid-container15">
+    <div class="grid-item15">1</div>
+    <div class="grid-item15">2</div>
+    <div class="grid-item15">3</div>
+    <div class="grid-item15">4</div>
+    <div class="grid-item15">5</div>
+    <div class="grid-item15">6</div>
+    <div class="grid-item15">7</div>
+    <div class="grid-item15">8</div>
+    <div class="grid-item15">9</div>
+    
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>

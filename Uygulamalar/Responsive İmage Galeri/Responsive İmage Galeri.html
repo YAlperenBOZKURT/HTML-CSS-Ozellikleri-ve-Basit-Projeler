@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+      *{
+         box-sizing: border-box;
+      }
+.nav {
+    position: relative;
+ top: -8px;
+ width: 110%;
+ left: -8px;
+    background-color: black;
+    height: 65px;
+   }
+ .nav a {
+    display: inline-block;
+    color: grey;
+    text-decoration: none;
+    padding: 20px 20px;
+    font-size: 21px;
+   
+ }
+ .nav a:hover {
+    color: white;
+ }
+ .header {
+   text-align: center;
+ }
+ .row {
+   display: flex;
+   flex-wrap: wrap;
+   padding: 0 5px;
+ }
+ .colomn {
+   flex: 25%;
+   max-width: 25%;
+   padding: 0px 5px;
+ }
+ .colomn img {
+   margin-top: 6px;
+   width: 100%;
+   vertical-align: middle;
+   
+  
+   
+ }
+ #a1 {
+   padding-left: 280px;
+ }
+
+@media screen and (max-width: 600px) {
+
+  .colomn {
+   flex: 100%;
+   max-width: 100%;
+}
+#a1 {
+   padding-left: 20px;
+ }
+ .nav a {
+   font-size: 15px;
+   padding: 23px 20px;
+ }
+   
+}
+@media screen and (min-device-width: 601px) and (max-device-width: 912px) { 
+   #a1 {
+   padding-left: 200px;
+ }
+
+   .colomn {
+      flex: 50%;
+      max-width: 50%;
+   } 
+}
+
+
+    </style>
+</head>
+<body>
+
+</div style="position:relative">
+<div class="nav">
+  <a id="a1" href="">Anasayfa</a>
+  <a href="">Hakkımda</a>
+  <a href="">İletişim</a>
+  <a  href="">CV </a>
+</div>
+
+
+<div class="header">
+   <h1>Flexbox Image Gallery</h1>
+   <p>Flexbox ile imageleri ayarlama</p>
+
+
+
+
+
+</div>
+
+
+
+<div class="row">
+<div class="colomn">
+   <img src="1.jpg" alt="">
+   <img src="2.jpg" alt="">
+   <img src="3.jpg" alt="">
+   <img src="4.jpg" alt="">
+</div>
+   <div class="colomn">
+   <img src="5.jpg" alt="">
+   <img src="13.jpg" alt="">
+   <img src="7.jpg" alt="">
+   <img src="8.jpg" alt="">
+</div>
+<div class="colomn">
+   <img src="9.jpg" alt="">
+   <img src="10.jpg" alt="">
+   <img src="11.jpg" alt="">
+   <img src="12.jpg" alt="">
+</div>
+<div class="colomn">
+   <img src="14.jpg" alt="">
+   <img src="15.jpg" alt="">
+   <img src="16.jpg" alt="">
+   <img src="17.jpg" alt="">
+</div>
+</div>
+
+
+
+    
+</body>
+</html>
